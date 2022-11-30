@@ -1,0 +1,10 @@
+<p>users works!</p>
+
+
+
+<div *ngFor="let user of users ">
+    <hr>
+    {{user.title}}
+    <a   [routerLink]="['/user',user.id]">go to user</a>
+    <hr>
+</div>
